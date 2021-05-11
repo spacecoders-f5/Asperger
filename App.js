@@ -1,6 +1,10 @@
 import React from 'react';
 import { StyleSheet, Text, View, TouchableOpacity } from 'react-native';
 
+//Screens
+import Home from './screens/Home'
+
+//Components
 import  Navbar from './src/componentes/Navbar';
 import  Header from './src/componentes/Header';
 
@@ -9,6 +13,7 @@ export default function App() {
     <View style={styles.container}>
 
       <Header />
+      <Home />
       <Navbar />
    
 
