@@ -3,29 +3,29 @@ import { StyleSheet, Text, View, TouchableOpacity, Image} from 'react-native';
 
  const Navbar = () => {
         return (
-            <View style={styles.navbar, {flexDirection: "row"}}>
+            <View style={styles.navbar}>
                 <TouchableOpacity>
                     <Image
                         source={require('../../assets/img/anadir.svg')}
-                        style={{ width: 100, height: 100, marginBottom: 15 }}
+                        style={ styles.img }
                     />
                 </TouchableOpacity>
                 <TouchableOpacity>
                     <Image
                         source={require('../../assets/img/list.svg')}
-                        style={{ width: 100, height: 100, marginBottom: 15 }}
+                        style={ styles.img }                    
                     />
                 </TouchableOpacity>
                 <TouchableOpacity>
                     <Image
                         source={require('../../assets/img/trofeo.svg')}
-                        style={{ width: 100, height: 100, marginBottom: 15 }}
+                        style={ styles.img }                    
                     />
                 </TouchableOpacity>
                 <TouchableOpacity>
                     <Image
                         source={require('../../assets/img/color-palette.svg')}
-                        style={{ width: 100, height: 100, marginBottom: 15 }}
+                        style={ styles.img }                    
                     />
                 </TouchableOpacity>
           
@@ -40,11 +40,21 @@ import { StyleSheet, Text, View, TouchableOpacity, Image} from 'react-native';
 const styles = StyleSheet.create({
 
     navbar: {
+        position: 'absolute',
+        bottom: 0,
         flex: 1,
+        flexDirection: "row",
         backgroundColor: '#1E73BE',
         alignItems: 'center',
-        justifyContent: 'center',
+        justifyContent: 'space-around',
+        width: '100%',
+        padding: 10
       },
+     img: {
+        minWidth: 30,
+        minHeight: 30
+     }
+
 
 
 })
